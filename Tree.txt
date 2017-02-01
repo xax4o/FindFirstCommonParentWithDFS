@@ -1,0 +1,33 @@
+                                             A
+
+
+                     S                       m                              q
+
+
+
+
+
+
+             D                V                                       1              2
+
+
+
+
+       R    t   e         o     p      l                     3              4
+
+15
+a s
+s d
+a m
+s v
+a q
+d r
+q 1
+d t
+q 2
+1 3
+1 4
+d e
+v o
+v p
+v l
