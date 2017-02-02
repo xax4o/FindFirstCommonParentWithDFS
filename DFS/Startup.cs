@@ -18,7 +18,7 @@
             var firstNode = searchedNodes[0];
             var secondNode = searchedNodes[1];
 
-            var rootNode = GetRootNode(nodes);
+            var rootNode = GetRootNode();
             var result = GetFirstCommonNode(rootNode, firstNode, secondNode);
 
             Console.WriteLine("The Root parrent of {0} and {1} is {2} ", firstNode, secondNode, result.Name);
@@ -67,7 +67,7 @@
 
         public static Node GetFirstCommonNode(Node startNode, string firstSearchedString, string secondSearchedString)
         {
-            int index = 0;
+            var index = 0;
 
             while (true)
             {
@@ -101,7 +101,7 @@
             throw new ArgumentException("No Common node");
         }
 
-        public static Node GetRootNode(IDictionary<string, Node> nodes)
+        public static Node GetRootNode()
         {
             foreach (var node in nodes)
             {
