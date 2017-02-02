@@ -1,4 +1,4 @@
-﻿namespace DFS
+﻿namespace FindFirstCommonParentWithDFS
 {
     using System.Collections.Generic;
 
@@ -17,6 +17,14 @@
 
         public bool HasParent { get; set; }
 
+        public int NumberOfChildren
+        {
+            get
+            {
+                return this.children.Count;
+            }
+        }
+
         public void AddChild(Node node)
         {
             this.children.Add(node);
@@ -25,14 +33,6 @@
         public Node GetChild(int index)
         {
             return this.children[index];
-        }
-
-        public int NumberOfChildren
-        {
-            get
-            {
-                return this.children.Count;
-            }
         }
     }
 }

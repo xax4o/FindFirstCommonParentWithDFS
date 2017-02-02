@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DFS")]
+[assembly: AssemblyTitle("FindFirstCommonParentWithDFS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DFS")]
+[assembly: AssemblyProduct("FindFirstCommonParentWithDFS")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("86f3e22f-9ec2-4c11-a31d-9eb0d7146e90")]
+[assembly: Guid("a44e97ab-b7d4-4249-8ceb-280a221a924a")]
 
 // Version information for an assembly consists of the following four values:
 //

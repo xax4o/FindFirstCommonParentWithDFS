@@ -1,4 +1,4 @@
-﻿namespace DFS
+﻿namespace FindFirstCommonParentWithDFS
 {
     using System;
     using System.Collections.Generic;
