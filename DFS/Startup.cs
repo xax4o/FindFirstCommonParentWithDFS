@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    public class Program
+    public class Startup
     {
         public static HashSet<Node> usedNodes = new HashSet<Node>();
         public static Dictionary<string, Node> nodes = new Dictionary<string, Node>();
@@ -12,24 +12,26 @@
         {
             ReadInput();
 
-            Console.Write("Enter node: ");
-            var firstNode = Console.ReadLine();
+            Console.Write("Enter the two nodes in the format /FirstNode SecondNode/: ");
+            var searchedNodes = Console.ReadLine().Split(' ');
 
-            Console.Write("Enter node 2: ");
-            var secondNode = Console.ReadLine();
+            var firstNode = searchedNodes[0];
+            var secondNode = searchedNodes[1];
 
             var rootNode = GetRootNode(nodes);
-            var result = GetMinimumCommonNode(rootNode, firstNode, secondNode);
-        
-            Console.WriteLine("Searched node is: " + result.Name);
+            var result = GetFirstCommonNode(rootNode, firstNode, secondNode);
+
+            Console.WriteLine("The Root parrent of {0} and {1} is {2} ", firstNode, secondNode, result.Name);
         }
 
         public static void ReadInput()
         {
+            Console.Write("Enter number of tree nodes: ");
             var N = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < N; i++)
             {
+                Console.Write("Enter tree node {0} in the format /Parrent Child/: ", i + 1);
                 var connection = Console.ReadLine().Split(' ');
 
                 var parent = connection[0];
@@ -63,7 +65,7 @@
             }
         }
 
-        public static Node GetMinimumCommonNode(Node startNode, string firstSearchedString, string secondSearchedString)
+        public static Node GetFirstCommonNode(Node startNode, string firstSearchedString, string secondSearchedString)
         {
             int index = 0;
 
